@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Your HTML Here -->
+
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Image -->
+            <div class="image-container">
+                <img src="profile.jpg">
+            </div>
+
+            <!-- Card Content -->
+            <div class="card-content">
+                <h1>Abby Crutcher</h1>
+
+                <div class="info-badges">
+                    <div class="badge">
+                        <span class="badge-label">Major</span>
+                        <span>Computer Science</span>
+                    </div>
+
+                    <div class="badge">
+                        <span class="badge-label">Year</span>
+                        <span>Second</span>
+                    </div>
+
+                    <div class="badge">
+                        <span class="badge-label">From</span>
+                        <span>Atlanta, GA</span>
+                    </div>
+                </div>
+
+                <div class="passion-section">
+                    <p>
+                        Hi, I'm Abby, and I'm passionate about making a difference in the world and my community through
+                        technology. My major inspirations come from the Nicholas House and my work in the SocWeB
+                        research lab.
+                        The Nicholas House has shown me how charities need help when it comes to technical
+                        infrastructure,
+                        and the SocWeB lab has shown me how rewarding it is to work on projects that directly help
+                        people. I
+                        want to make the world a better place, and I know I can do so with the right knowledge and
+                        guidance!
+                </div>
+            </div>
+        </div>
+        <!-- Fun Facts Tab -->
+        <div class="fun-facts-tab" onclick="toggleFunFacts()">
+            Fun Facts
+        </div>
+
+        <div id="funFactsBox" class="fun-facts-box">
+            <button class="close-btn" onclick="toggleFunFacts()">×</button>
+            <h3>Fun Facts About Me</h3>
+
+            I do Aerial Silks as a sport, I love baking, especially cakes and cookies, and I've fostered over
+            100 kittens!
+
+        </div>
+    </div>
+    <script>
+        function toggleFunFacts() {
+            const box = document.getElementById('funFactsBox');
+            box.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>
