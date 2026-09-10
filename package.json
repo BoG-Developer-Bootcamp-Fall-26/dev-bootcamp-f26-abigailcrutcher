@@ -1,0 +1,25 @@
+{
+  "name": "dev-bootcamp-f26-abigailcrutcher",
+  "version": "1.0.0",
+  "description": "This repository contains all the exercises and resources needed for the Spring 2026 Dev Bootcamp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoG-Developer-Bootcamp-Fall-26/dev-bootcamp-f26-abigailcrutcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BoG-Developer-Bootcamp-Fall-26/dev-bootcamp-f26-abigailcrutcher/issues"
+  },
+  "homepage": "https://github.com/BoG-Developer-Bootcamp-Fall-26/dev-bootcamp-f26-abigailcrutcher#readme",
+  "dependencies": {
+    "tailwindcss": "^4.3.3"
+  }
+}
