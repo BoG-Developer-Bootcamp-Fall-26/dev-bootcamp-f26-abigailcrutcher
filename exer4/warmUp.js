@@ -16,7 +16,10 @@
  * F = anything < 60
  */
 function toLetterGrade(numGrade) {
-  // TODO
+  if (numGrade > 100 || numGrade < 0) { return "INVALID";}
+  let dict = {9:"A", 8:"B", 7:"C",6:"D"}
+  if (numGrade === 100) {numGrade -= 1;}
+  return dict[Math.floor(numGrade/10)] ?? "F";
 }
 
 /**
@@ -27,7 +30,14 @@ function toLetterGrade(numGrade) {
  * Example: [9, 3, 4, 1, 2, 0] --> [4, 2, 0]
  */
 function getEvenElements(array) {
-  // TODO
+  let evens = [];
+  array.forEach(function (num) {
+    if (num % 2 === 0) {
+      evens.push(num);
+    }
+  });
+
+  return evens;
 }
 
 /**
@@ -40,7 +50,15 @@ function getEvenElements(array) {
  * Example: "I love Bits of Good" --> 4
  */
 function findLongestWord(string) {
-  // TODO
+  let words = string.split(" ");
+  let longest = 0;
+  words.forEach(function (word) {
+    if (word.length > longest) {
+      longest = word.length;
+    }
+  });
+
+  return longest;
 }
 
 /**
@@ -65,7 +83,15 @@ function findLongestWord(string) {
     } 
  */
 function combineObjects(object1, object2) {
-  // TODO
+  let combined = {};
+  for (let key in object1) {
+    combined[key] = object1[key];
+  }
+  for (let key in object2) {
+    combined[key] = object2[key];
+  }
+
+  return combined;
 }
 
 /**
@@ -77,7 +103,12 @@ function combineObjects(object1, object2) {
  *  Example: [1, 2, 3] -> [3, 2, 1]
  */
 function reverseArr(array) {
-  // TODO
+  let reversed = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    reversed.push(array[i]);
+  }
+
+  return reversed;
 }
 
 // DO NOT EDIT BELOW THIS LINE -- the code is for testing purposes only!
